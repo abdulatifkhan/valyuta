@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JSdan uchinchi dars</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="d-flex justify-content-center badge-info pt-lg-5 pb-lg-5 font-weight-bold" style="font-size: 36px;">
+    Valyuta ayirboshlash shahobchasi!
+  </div>
+  <span >Bankomatdan pul chiqmay qolishi mumkin!</span>
+
+<div class="container d-flex">
+  <div class="ml-auto mr-auto mt-5">
+    <form class="exchange-form" action="https//:echo.htmlacademy.ru" method="POST">
+      
+      <input class="exchange-input text-truncate border-secondary font-weight-bolder" type="number" name="qiymat" aria-label="Qiymatni kiriting" placeholder="Qiymatni kiriting" >
+      
+      <select class="exchange-select badge-dark" name="tanlov" aria-label="tanlovni amalga oshiring">
+        <option value="10359.88">USD</option>
+        <option value="12285.78">Yevro</option>
+        <option value="1549.88">Yuan</option>
+        <option value="136.11">Rubl</option>
+        <option value="98.96">Yean</option>
+        <option value="13509.28">Funt</option>
+      </select>
+      
+      <input class="exchange-result text-truncate border-secondary font-weight-bolder" type="text" name="natija" aria-label="Marhamat natijani qabul qilib oling!" placeholder="Marhamat natija!" readonly>
+    
+      <button class="exchange-button rounded-pill bg-white" type="submit">O'girish</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
