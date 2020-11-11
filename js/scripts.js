@@ -8,6 +8,11 @@ elExchangeButton.addEventListener('click', function(evt) {
   var elExchangeSelect = document.querySelector('.exchange-select').value;
   elExchangeSelect = parseFloat(elExchangeSelect, 10);
 
-  var javob = elExchangeInput * elExchangeSelect;
-  elExchangeResult.value = `${javob.toFixed(2)} so'm`;
+  if (isNaN(elExchangeInput)) {
+    alert('Iltimos, raqam kiriting!');
+    return;
+  } else {
+    var javob = elExchangeInput * elExchangeSelect;
+    elExchangeResult.value = `${javob.toFixed(2)} so'm`;
+  }
 });
